@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <center>
+       <h1>GET THE MULTIPLICATIN TABLE OF ANY NUMBER</h1>
+    
+       <input type="number" name="value" id="num" style="width: 250px;height: 25px;">
+
+       <button style="width: 75px;height: 30px;" onclick="multiplication();">Enter</button>
+       
+       
+       <p id="demo" style="font-size: 25px;">
+       	
+       </p>
+       
+       
+    </center>
+    
+
+    <script type="text/javascript">
+    	function multiplication() {
+
+    		var x=document.getElementById("num").value;
+    		var y="";
+
+    		for(var i=1; i<=10 ; i++)
+    		{
+    			y=y+" "+x+" "+"*"+" "+ i +" "+"="+" "+ x*i +"<br>";
+    		//document.write("x "+"* "+ i +"="+ x*i );
+    			//document.write("<br>")
+    		}
+    		document.getElementById("demo").innerHTML=y;
+
+    	
+    			
+    	}
+    </script>
+    
+
+
+</body>
+</html>
